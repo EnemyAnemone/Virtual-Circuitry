@@ -118,6 +118,6 @@ public class GridGenerator : MonoBehaviour {
 
     private GameObject CreateWires()
     {
-
+        return null;
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerWire : MonoBehaviour {
+public class PowerWire : IWire {
 
 	// Use this for initialization
 	void Start () {

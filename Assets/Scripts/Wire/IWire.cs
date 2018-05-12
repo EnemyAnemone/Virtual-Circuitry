@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class IWire : MonoBehaviour {
 
-	// Use this for initialization
+    public float voltage;
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
