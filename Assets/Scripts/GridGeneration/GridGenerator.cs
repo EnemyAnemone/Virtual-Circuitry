@@ -6,15 +6,58 @@ using UnityEngine;
 public class GridGenerator : MonoBehaviour {
 
     public GameObject SlotPrefab;
-    public int HorizontalSlotCount;
-    public int VerticalSlotCount;
-    public float SlotSize;
-    public float SlotSpacing;
 
-    private float SlotHorizontalOffset;
-    private float SlotVerticalOffset;
 
-    private List<List<Slot>> slots;
+	// Set the top ones to private if you want
+	public int horizontalSlotCount = 0;
+    public int HorizontalSlotCount {
+		get { return this.horizontalSlotCount; }
+		set { 
+			this.horizontalSlotCount = value; 
+		}
+	}
+
+	public int verticalSlotCount = 0;
+	public int VerticalSlotCount {
+		get { return this.verticalSlotCount; }
+		set {
+			this.verticalSlotCount = value;
+		}
+	}
+
+	public float slotSize = 0;
+	public float SlotSize {
+		get { return this.slotSize; }
+		set {
+			this.slotSize = value;
+		}
+	}
+
+	public float slotSpacing = 0;
+	public float SlotSpacing {
+		get { return this.slotSpacing; }
+		set {
+			this.slotSpacing = value;
+		}
+	}
+
+	public float slotHorizontalOffset = 0;
+	public float SlotHorizontalOffset {
+		get { return this.slotHorizontalOffset; }
+		set {
+			this.slotHorizontalOffset = value;
+		}
+	}
+
+	public float slotVerticalOffset = 0;
+	public float SlotVerticalOffset {
+		get { return this.slotVerticalOffset; }
+		set {
+			this.slotVerticalOffset = value;
+		}
+	}
+
+	private List<List<Slot>> slots;
 
 	void Start () {
 		if (SlotPrefab == null)
